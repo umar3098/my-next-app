@@ -20,16 +20,13 @@ const PostRequestComponent = () => {
     const data = { username: name }; // Make sure you send 'username' instead of 'name'
 
     try {
-      const response = await fetch(
-        "http://15.207.25.124:5000/git addapi/add-user",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data), // Sending the data as JSON
-        }
-      );
+      const response = await fetch("http://15.207.25.124:5000/api/add-user", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data), // Sending the data as JSON
+      });
 
       if (response.ok) {
         const result = await response.json();
