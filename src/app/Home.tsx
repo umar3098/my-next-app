@@ -6,7 +6,7 @@ const PostRequestComponent = () => {
   // State for form input fields
   const [name, setName] = useState("");
   const [responseMessage, setResponseMessage] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading] = useState(false);
 
   // Handle form submission
   const handleSubmit = async (event: React.FormEvent) => {

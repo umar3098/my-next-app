@@ -1,4 +1,4 @@
-const User = require("../models/UserSchema"); // Adjust the path as necessary
+const User = require("../models/FirstModel"); // Adjust the path as necessary
 
 // Create and save a new user
 const createUser = async (req, res) => {
